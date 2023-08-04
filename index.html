@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+<div class="contain">
+    <header class="left-section">
+        <div>
+            <div class="logo-part">
+                <img src="./Spotify logo.png" />
+            </div>
+            
+            <div class="Home-part">
+                <div>
+                    <img src="./fi-ss-home.png" />
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <img src="./fi-rs-search.png" />
+                    <a href="#">Search</a>
+                </div>
+                <div>
+                    <img src="./library.png" />
+            <a href="#">Your Library</a>
+          </div>
+        </div>
+        
+        <div class="Create-part">
+            <div class="plus">
+                <img src="./plus.png" />
+                <a href="#">Create Playlist</a>
+            </div>
+            <div class="heart">
+                <img src="./heart.png" />
+                <a href="#">Liked Songs</a>
+            </div>
+            <div class="radio">
+                <img src="./podcast.png" />
+                <a href="#">Your Episodes</a>
+            </div>
+        </div>
+        
+        <!-- <div class="fav-part">
+            <h1><a href="#">Fav</a></h1>
+            <h1><a href="#">Daily Mix 1</a></h1>
+            <h1><a href="#">Discover Weekly</a></h1>
+            <h1><a href="#">Malayalam</a></h1>
+            <h1><a href="#">Dance/Electronix Mix</a></h1>
+            <h1><a href="#">EDM/Popular</a></h1>
+        </div> -->
+        
+        <div class="install-part">
+            <img src="./install.png" >
+            <a href="#">Install app</a>
+        </div>
+        
+      </div>
+    </header>
+    
+    <section class="right-section">
+        <div class="navbar">
+            <div class="arrow">
+                <a href="#">
+                    <img src="./arrow-left.png">
+                </a>
+                <a href="#">
+                    <img src="./arrow-right.png">
+                </a>
+            </div>
+            
+            <div class="profile">
+                <a href="#">
+                    <span>KB</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="good">
+            <h1>Good Morning</h1>
+            <div class="sections">
+                <div class="heartt">
+                    <img src="./heart.png" />
+                    <a href="#">Liked Songs</a>
+                </div>
+                <div>
+                    <img src="./neffex.png" />
+                    <a href="#">Netflix Playlist</a>
+                </div>
+                <div>
+                    <img src="./kD.png" />
+                    <a href="#">K/DA</a>
+                </div>
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">Dance/Electronix Mix</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="shows">
+            <h1>Shows you might like</h1>
+            <div class="book">
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">Weekly songs</a>
+                </div>
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">The alexa show</a>
+                </div>
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">Meditation Morning</a>
+                </div>
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">Bhagwaat Gita</a>
+                </div>
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">Bollywood Hits</a>
+                </div>
+                <div>
+                    <img src="./dance.png" />
+                    <a href="#">Hollywood Hits</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <div class="Player">
+            <input type="range" name="range" id="myprogressbar" min="0" max="100">
+            <div class="icons">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M16.3395 15.4905C15.876 15.3443 15.2843 14.9633 14.622 14.3003C14.0535 13.7438 13.467 13.0268 12.867 12.2453C12.723 12.4365 12.5798 12.6278 12.4358 12.8228C12.0435 13.3538 11.6423 13.89 11.2335 14.4173C12.6615 16.1498 14.1435 17.8508 16.341 18.1313V20.1563L22.0073 16.8863L16.3403 13.614V15.4905H16.3395ZM6.89401 8.95053C7.46101 9.50553 8.04751 10.2225 8.64901 11.004C8.79451 10.8075 8.94151 10.614 9.08851 10.413C9.48034 9.8809 9.87836 9.35337 10.2825 8.83053C8.75851 6.98253 7.18276 5.15028 4.73551 5.06253H2.11051V7.68753H4.73551C5.22676 7.66728 5.99701 8.05128 6.89401 8.94978V8.95053ZM16.3395 7.75578V9.65778L22.0065 6.38553L16.3395 3.11328V5.09853C14.9115 5.26353 13.7708 6.10953 12.777 7.08153C11.1293 8.71953 9.68926 10.9575 8.26801 12.7365C6.86776 14.5643 5.46301 15.6518 4.73401 15.564H2.10901V18.189H4.73401C6.37276 18.1665 7.64401 17.2395 8.73901 16.1693C10.3845 14.5313 11.826 12.294 13.2465 10.5158C14.4038 9.00303 15.5595 8.01078 16.3395 7.75578Z" fill="#C4C4C4"/>
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                        <path d="M20.6666 9.04175L11.625 15.5001L20.6666 21.9584V9.04175ZM11.625 15.5001V9.04175H9.04163V21.9584H11.625V15.5001Z" fill="#C4C4C4"/>
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                        <path d="M25.5 4.25C21.2972 4.25 17.1887 5.49629 13.6941 7.83127C10.1996 10.1663 7.47593 13.485 5.86757 17.368C4.25921 21.2509 3.83839 25.5236 4.65832 29.6457C5.47826 33.7678 7.50212 37.5542 10.474 40.526C13.4459 43.4979 17.2322 45.5218 21.3543 46.3417C25.4764 47.1616 29.7491 46.7408 33.632 45.1324C37.515 43.5241 40.8338 40.8004 43.1687 37.3059C45.5037 33.8113 46.75 29.7029 46.75 25.5C46.75 22.7094 46.2004 19.9461 45.1325 17.368C44.0645 14.7898 42.4993 12.4472 40.526 10.474C38.5528 8.50074 36.2102 6.93547 33.632 5.86756C31.0539 4.79965 28.2906 4.25 25.5 4.25ZM21.3543 32.5V17.381L33 25.5L21.3543 32.5Z" fill="white"/>
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                        <path d="M10.3334 9.04175L19.375 15.5001L10.3334 21.9584V9.04175ZM19.375 15.5001V9.04175H21.9584V21.9584H19.375V15.5001Z" fill="#C4C4C4"/>
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M16.15 5.33817C16.2776 5.33817 16.3953 5.38217 16.4888 5.45587L16.5625 5.52517L16.5812 5.54717C17.2202 6.33923 17.627 7.29309 17.7562 8.30259C17.8854 9.31209 17.732 10.3376 17.313 11.2651C16.894 12.1926 16.2259 12.9856 15.383 13.556C14.5401 14.1263 13.5554 14.4516 12.5387 14.4957L12.3 14.5001H5.69996C5.58879 14.5001 5.47764 14.4968 5.36666 14.4902L7.18936 16.3107C7.2803 16.4018 7.33639 16.522 7.34785 16.6502C7.3593 16.7785 7.32541 16.9067 7.25206 17.0125L7.18936 17.0895C7.09822 17.1804 6.97806 17.2365 6.84982 17.248C6.72158 17.2594 6.59338 17.2255 6.48756 17.1522L6.41056 17.0895L3.66056 14.3395C3.56962 14.2483 3.51353 14.1282 3.50208 13.9999C3.49062 13.8717 3.52452 13.7435 3.59786 13.6377L3.66056 13.5607L6.41056 10.8107C6.50757 10.7132 6.63756 10.6557 6.77491 10.6493C6.91226 10.6429 7.04701 10.6883 7.1526 10.7763C7.2582 10.8644 7.32698 10.9888 7.34539 11.1251C7.3638 11.2613 7.3305 11.3995 7.25206 11.5125L7.18936 11.5895L5.38866 13.3891L5.54266 13.3979L5.69996 13.4001H12.3C13.1309 13.4001 13.9448 13.1649 14.6476 12.7217C15.3504 12.2784 15.9134 11.6452 16.2713 10.8953C16.6292 10.1454 16.7674 9.30955 16.6701 8.48436C16.5727 7.65917 16.2436 6.87843 15.721 6.23247C15.6564 6.1516 15.6159 6.05414 15.6043 5.95131C15.5926 5.84848 15.6102 5.74444 15.655 5.65115C15.6998 5.55786 15.77 5.4791 15.8576 5.42393C15.9451 5.36876 16.0465 5.33942 16.15 5.33927V5.33817ZM10.8106 0.910668C10.9017 0.819725 11.0219 0.76364 11.1501 0.752183C11.2783 0.740725 11.4065 0.774622 11.5124 0.847968L11.5894 0.910668L14.3394 3.66067L14.4021 3.73767C14.4654 3.82952 14.4994 3.93847 14.4994 4.05007C14.4994 4.16166 14.4654 4.27062 14.4021 4.36247L14.3394 4.43947L11.5894 7.18947L11.5124 7.25217C11.4205 7.31556 11.3116 7.3495 11.2 7.3495C11.0884 7.3495 10.9794 7.31556 10.8876 7.25217L10.8106 7.18947L10.7479 7.11247C10.6845 7.02062 10.6505 6.91166 10.6505 6.80007C10.6505 6.68847 10.6845 6.57952 10.7479 6.48767L10.8106 6.41067L12.6113 4.61107L12.4573 4.60227L12.3 4.60007H5.69996C4.86834 4.60002 4.05373 4.83565 3.35055 5.27965C2.64737 5.72365 2.08442 6.35784 1.72694 7.10872C1.36946 7.85959 1.2321 8.69639 1.33078 9.52214C1.42945 10.3479 1.76012 11.1288 2.28446 11.7743C2.37213 11.8911 2.40979 12.038 2.38916 12.1826C2.36853 12.3272 2.2913 12.4577 2.17446 12.5454C2.11661 12.5888 2.05077 12.6204 1.98071 12.6383C1.91065 12.6563 1.83773 12.6603 1.76613 12.6501C1.62152 12.6294 1.49103 12.5522 1.40336 12.4354C0.768693 11.6421 0.366137 10.6885 0.240334 9.68045C0.11453 8.67236 0.270396 7.64912 0.690647 6.7242C1.1109 5.79928 1.77911 5.00883 2.62119 4.44051C3.46326 3.87219 4.44629 3.5482 5.46126 3.50447L5.69996 3.50007H12.3C12.4122 3.50007 12.5233 3.50337 12.6333 3.50997L10.8106 1.68947L10.7479 1.61247C10.6745 1.50665 10.6406 1.37845 10.6521 1.25021C10.6635 1.12197 10.7196 1.00181 10.8106 0.910668Z" fill="#C4C4C4"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <section1>
+        <div id="musicplayer">
+            <div class="volume-controls"></div>
+            <div class="player-center">
+              <div class="player-controls">
+                <img
+                  style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                  src="D:\programming\frontend\CSS\music\shuffle.png"
+                />
+                <img
+                  style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                  src="./music/previous_musicbar.png"
+                />
+                <img
+                  style="height: 2rem; margin-right: 1rem"
+                  src="./music/play_musicbar.png"
+                />
+                <img
+                  style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                  src="./music/next_musicbar.png"
+                />
+                <img
+                  style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                  src="./music/loop.png"
+                />
+              </div>
+              <div class="player-timeline">
+                <span class="current-time">0:00</span>
+                <input
+                  type="range"
+                  class="timeline-slider"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="0"
+                />
+                <span class="total-time">0:00</span>
+              </div>
+            </div>
+    
+            <div class="volume-controls">
+              <img
+                src="./music/device.png"
+                style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                alt="Volume"
+              />
+              <img
+                src="./music/playlist.png"
+                style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                alt="Settings"
+              />
+              <img
+                src="./music/music.png"
+                style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+                alt="Fullscreen"
+              />
+              <input
+                type="range"
+                class="volume-slider"
+                min="0"
+                max="100"
+                step="1"
+                value="50"
+              />
+            music
+        
+    </section1> -->
+
+
+
+    
+</div>
+</body>
+</html>
